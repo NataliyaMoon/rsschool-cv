@@ -1,15 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Natalya's document</title>
-</head>
-<body>
-    <h2>Hello, wolrd!</h2>
-    <p>My name is Natalya</p>
-    <p>This is CV#2</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Natalya's CV#3</title>
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <div class="main_info">
+                    <header>
+                        <img src="images/photo.png" alt="photo" class="photo">
+                        <h1>Nataliya Mun</h1>
+                        <h2>Junior Frontend Developer</h2>
+                    </header>
+                    <h3>Contact Info:</h3>
+                    <ul>
+                        <li> Phone: +7 (776) 181 44 44</li>
+                        <li> E-mail: nataliya.moon@gmail.com</li>
+                        <li> GitHub: NataliyaMoon</li>
+                        <li> Telegram @NataliyaMoon</li>
+                    </ul>
+                    <h3>Skills:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS (Bootstrap, SASS/SCSS)</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Git/GitHub</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="about_me">
+                    <h3>About Me</h3>
+                    <p>I am 32 years old, I work as a journalist. I want to
+                        learn programming because I think it will allow me to
+                        learn more and better reveal my mental potential.</p>
+                    <h3>Code Examples</h3>
+                    <pre>
+                        <code>
+    const location = useLocation();
+    useEffect(() => {
+        dispatch(setLoginError(null));
+    }, [location]);
+
+    const inputChangeHandler = (e) => {
+        const {name, value} = e.currentTarget;
+        setState(prevState => {
+            return {...prevState, [name]: value};
+        });
+    };
+                        </code>
+                    </pre>
+                    <h3>Experience</h3>
+                    Worked on a CRM project for a flower shop
+                    <h3>Education</h3>
+                    <ul>
+                        <li>KazNU (journalism, master's degree)</li>
+                        <li> Attractor-school (JS)</li>
+                    </ul>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Russian - native speaker</li>
+                        <li>English - Pre-Intermediate</li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <nav>
+                    <a href="https://github.com/NataliyaMoon/rsschool-cv"
+                        class="github_logo">
+                        <img src="images/github_logo.jpeg" alt="github"
+                            class="logo">
+                    </a>
+                </nav>
+                <span>2024</span>
+                <nav>
+                    <a href="https://rs.school/courses/javascript-preschool-ru"
+                        class="rs_logo">
+                        <img src="images/rs.png" alt="github" class="logo">
+                    </a>
+                </nav>
+            </footer>
+        </div>
+    </body>
 </html>
