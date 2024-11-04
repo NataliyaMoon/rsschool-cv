@@ -18,8 +18,8 @@ Git/GitHub
 React
 
 Code Examples
-
-const Login = () => {
+    
+    const Login = () => {
     const error = useSelector(({usersState}) => usersState.loginError);
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -27,7 +27,7 @@ const Login = () => {
         username: "",
         password: ""
     });
-
+    
     const location = useLocation();
     useEffect(() => {
         dispatch(setLoginError(null));
