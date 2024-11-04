@@ -41,17 +41,17 @@
                     <h3>Code Examples</h3>
                     <pre>
                         <code>
-    const location = useLocation();
-    useEffect(() => {
-        dispatch(setLoginError(null));
-    }, [location]);
+const location = useLocation();
+useEffect(() =&gt; {
+    dispatch(setLoginError(null));
+}, [location]);
 
-    const inputChangeHandler = (e) => {
-        const {name, value} = e.currentTarget;
-        setState(prevState => {
-            return {...prevState, [name]: value};
-        });
-    };
+const inputChangeHandler = (e) =&gt; {
+    const {name, value} = e.currentTarget;
+    setState(prevState =&gt; {
+        return {...prevState, [name]: value};
+    });
+};
                         </code>
                     </pre>
                     <h3>Experience</h3>
@@ -70,16 +70,13 @@
             </main>
             <footer>
                 <nav>
-                    <a href="https://github.com/NataliyaMoon/rsschool-cv"
-                        class="github_logo">
-                        <img src="images/github_logo.jpeg" alt="github"
-                            class="logo">
+                    <a href="https://github.com/NataliyaMoon/rsschool-cv" class="github_logo">
+                        <img src="images/github_logo.jpeg" alt="github" class="logo">
                     </a>
                 </nav>
                 <span>2024</span>
                 <nav>
-                    <a href="https://rs.school/courses/javascript-preschool-ru"
-                        class="rs_logo">
+                    <a href="https://rs.school/courses/javascript-preschool-ru" class="rs_logo">
                         <img src="images/rs.png" alt="github" class="logo">
                     </a>
                 </nav>
